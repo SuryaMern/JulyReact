@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex-direction: row;
+    width: 600px;
+  }
+
+  .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  }
+  
+  .picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .container h1,h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: arial;
+    cursor: pointer;
+  }
+
+  .container h1:hover{
+    cursor: pointer;
+    color: blue;
+    font: bold;
+  }
