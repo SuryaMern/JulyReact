@@ -1,0 +1,44 @@
+.navbar {
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .item {
+    margin-left: 10px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .title {
+    margin-right: 10px;
+  }
+  .content {
+    flex-grow: 2;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
