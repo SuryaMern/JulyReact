@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
     background-color: whitesmoke;
     padding: 10px;
@@ -18,27 +24,23 @@
   }
   
   .link {
+    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: blue;
     font-weight: bold;
   }
   
   .title {
     margin-right: 10px;
+    font-size: 20px;
+    color: blue;
   }
-  .content {
-    flex-grow: 2;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+  /* .content {
+    flex-grow: 1;
+  } */
 
-  .container {
+  /* .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+  } */
