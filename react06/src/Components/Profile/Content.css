@@ -1,0 +1,39 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 4px;
+    justify-items: center; 
+    padding: 20px;
+    font-family: "roboto", sans-serif;
+}
+.container{
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.container:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.images{
+    display: block;
+    height: 300px;
+}
+
+.picture{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.content{
+    margin-top: 80px;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

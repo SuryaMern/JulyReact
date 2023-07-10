@@ -1,0 +1,48 @@
+/* .Product{
+    display: inline-block;
+} */
+
+.all{
+    display: inline-block;
+    width: 270px;
+    margin: 10px 10px;
+}
+.product_shadow{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: box-shadow .4s;
+}
+
+.product_shadow:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+} 
+
+.product_img{
+   width: 250px;
+   height: 500px;
+   border-radius: 10px;
+}
+
+.logo_img{
+    width: 40px;
+    height: 40px;
+}
+
+.product_logo{
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+.product_text{
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+/* .logo_text{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+
+} */
