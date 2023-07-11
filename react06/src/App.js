@@ -33,10 +33,11 @@ export default App */
 //-------------------------------------------------------Card Component ---------------------------------
 
 
-/* import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 import Axios from "axios"
-// import ShowUser from "./Components/Card/ShowUser"
-import "./Components/Card/ShowUser.css"
+// import Content from "./Components/Profile/Content"
+// import "./Components/Card/ShowUser.css"
+import "./Components/Profile/Content.css"
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import Navbar from './Components/Navbar/Navbar'
 import HomePage from './Components/Pages/HomePage'
@@ -44,13 +45,15 @@ import UserPage from './Components/Pages/UserPage'
 import Footer from "./Components/Footer/Footer"
 function App() {
 
-  const [results, setResults] = useState([]);
+  const [user, setUser] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
 
+
+
   useEffect(() => {
-    Axios.get('https://randomuser.me/api/?results=20')
+    Axios.get('https://fakestoreapi.com/products?limit=20')
       .then((res) => {
-        setResults(res.data.results);
+        setUser(res.data);
       })
       .catch((err) => {
         console.error(err);
@@ -67,7 +70,7 @@ function App() {
       <Navbar/>  
       <Routes>
           <Route path="/home" element={<HomePage/>}/>
-          <Route path="/user" element={<UserPage  users={results} onUserClick={handleUserClick}/>}/>
+          <Route path="/user" element={<UserPage  user={user} onUserClick={handleUserClick}/>}/>
       </Routes>
       <Footer/>
       </Router>
@@ -75,8 +78,6 @@ function App() {
   )
 }
 export default App
- */
-
 
 //-------------------------------------------------Component-------------------------------------------------
 
@@ -102,10 +103,14 @@ export default App */
 
 //-------------------------------------------Designer Card -----------------------------------------------
 
+/* 
 import React, { useEffect, useState } from 'react'
 import Axios from "axios"
 import Content from "./Components/Profile/Content"
 import "./Components/Profile/Content.css"
+// import Navbar from "./Components/Navbar/Navbar"
+// import HomePage  from "./Components/Pages/HomePage"
+// import UserPage from "./Components/Pages/UserPage"
 function App() {
     const [users,setusers] = useState([])
     
@@ -129,4 +134,4 @@ function App() {
   </div>    
   )
 }
-export default App
+export default App */

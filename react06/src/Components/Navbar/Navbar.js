@@ -6,13 +6,13 @@ function Navbar() {
   const navLinkStyle=({isActive}) =>{
     return{
       fontWeight: isActive?"Bold":"normal",
-      textDecoration:isActive?"none":"underline"
+      backgroungColor: isActive?"Blue":"Red"
     }
   }
   return (
     // <div className='container'>
     <nav className="navbar">
-      <h1 className="title">Navbar</h1>
+      <h1 className="title">myfavdesigners</h1>
       <ul className="list">
         <li className="item">
           <NavLink style={navLinkStyle} to="/home" className="link" >Home</NavLink>

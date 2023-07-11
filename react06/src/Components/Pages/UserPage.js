@@ -1,12 +1,12 @@
 import React from 'react'
-import "./UserPage.css"
-import ShowUser from '../Card/ShowUser';
-function UserPage({ users, onUserClick }) {
+import Content from "../Profile/Content"
+// import "./Components/Profile/Content.css"
+function UserPage({ user, onUserClick }) {
   return (
     <div className='main'>
-      {users.map((user, index) => (
+      {user.map((user, index) => (
         <div key={index} onClick={() => onUserClick(user)}>
-          {<ShowUser users={user}/>}
+          {<Content user={user}/>}
         </div>
       ))}
     </div>

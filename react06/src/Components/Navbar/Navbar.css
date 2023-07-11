@@ -7,9 +7,11 @@
 .navbar {
     background-color: whitesmoke;
     padding: 10px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "roboto", sans-serif;
   }
   
   .list {
@@ -24,10 +26,10 @@
   }
   
   .link {
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: blue;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   .title {
